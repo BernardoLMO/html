@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*height: 100vh;*/
+    background-color: black;
+    color:white;
+}
+
+.Cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.Cabecalho_menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.Cabecalho_menu_link{
+    font-family: 'Montserrat', 'Sans-serif';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #bbfd22;
+    text-decoration: none;
+}
+
+.Titulo-destaque {
+    color: #bbfd22;
+}
+
+.Apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.Apresentacao_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap : 2.5rem;
+}
+
+.Apresentacao_conteudo_titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.Apresentacao_conteudo_texto{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Apresentacao__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Apresentacao__subtitulo{
+    font-family: 'Krona One', Sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.Apresentacao_link__link{
+    /*background-color: #22D4FD;*/
+    border: 2px solid #bbfd22;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color :#F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Apresentacao_link__link:hover{
+    cursor: pointer;
+    background-color: #272727;
+}
+
+.Apresentacao_imagem{
+    width: 50%;
+}
+
+.Rodape{
+    padding: 24px;
+    color: #000000;
+    background-color: #bbfd22;
+    text-align: center;
+    font-family: 'Montserrat', 'Sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .Cabecalho{
+        padding: 10%;
+    }
+
+    .Cabecalho_menu{
+        justify-content: center;
+    }
+    
+    .Apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .Apresentacao_conteudo{
+        width: auto;
+    }
+
+}
